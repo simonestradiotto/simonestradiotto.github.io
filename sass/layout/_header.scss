@@ -91,6 +91,9 @@
 
   &__profile_picture {
     transform: translateX(12px) translateY(-10px);
+    @media only screen and (max-width: 600px) {
+      transform: translateX(7px) translateY(-10px);
+    }
     width: 85%;
   }
 
