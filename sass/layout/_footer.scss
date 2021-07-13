@@ -1,0 +1,66 @@
+.contacts {
+  background-color: #000;
+  font-size: 1.5rem;
+  color: $dark-gray;
+
+  @media (hover: none) {
+    margin-top: 50rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    & > * {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    @media only screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    color: $dark-gray;
+    transition: all 0.2s;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  &__mail {
+    width: 10rem;
+    /* I modify the width of the mail to center the copyright text as the page shrink*/
+    @media only screen and (max-width: 650px) {
+      width: 15rem;
+    }
+    @media only screen and (max-width: 500px) {
+      width: 17rem;
+    }
+    @media only screen and (max-width: 480px) {
+      order: 2;
+    }
+    &--text {
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &__socials {
+    width: 10rem;
+    @media only screen and (max-width: 480px) {
+      order: 1;
+    }
+    &_icon {
+      transition: all 0.2s;
+      font-size: 2.7rem;
+      margin-left: 1rem;
+    }
+  }
+
+  &__copyright {
+    @media only screen and (max-width: 480px) {
+      order: 3;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.aspiration {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @media screen and (max-width: 1210px) {
+      /* If the window size is to small, the 4 containers can't fin all in one line. So let's split them!*/
+      flex-wrap: wrap;
+    }
+  }
+  background-color: $gray;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  padding: 3.5rem;
+  margin: 1em;
+  text-align: center;
+  transition: all 0.3s;
+  width: 45%;
+  @media only screen and (max-width: 850px) {
+    /* Again, the containers were getting to small. At this point they are one per line*/
+    width: 100%;
+    margin: 1rem 7rem;
+  }
+  @media only screen and (max-width: 500px) {
+    margin: 1rem 1rem;
+  }
+  &__name {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+  }
+  &__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    color: $color-primary-coral;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

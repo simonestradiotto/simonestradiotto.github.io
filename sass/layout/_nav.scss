@@ -1,0 +1,166 @@
+.navigation {
+  background-color: $light-gray;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  /* All the media queries with max width at 830px helped the process of transforming the nav into a burger nav*/
+  @media only screen and (max-width: 830px) {
+    &__responsive {
+      position: relative;
+
+      .navigation__links {
+        background-color: $light-gray;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        border-radius: 0.3rem;
+        width: 20rem;
+        margin-top: 3rem;
+        margin-right: 10rem;
+        height: 20rem;
+        justify-content: space-between;
+        align-items: center;
+
+        & > * {
+          margin: 1rem;
+          display: block;
+        }
+      }
+    }
+  }
+  &__wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 15;
+
+    @media only screen and (max-width: 830px) {
+      flex-direction: column-reverse;
+      width: 3rem;
+    }
+  }
+  &__icon {
+    display: none;
+    color: black;
+    font-size: 2rem;
+    transition: all 0.2s;
+    position: fixed;
+
+    @media only screen and (max-width: 830px) {
+      justify-self: flex-end;
+      display: block;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__name {
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    @media only screen and (max-width: 680px) {
+      font-size: 4rem;
+    }
+  }
+  & > * {
+    align-self: center;
+    height: 0.5rem;
+  }
+  &__links {
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    font-size: 1.5rem;
+    z-index: 20;
+
+    @media only screen and (max-width: 830px) {
+      flex-direction: column;
+      margin-top: 2rem;
+      position: fixed;
+    }
+    @media only screen and (max-width: 680px) {
+      font-size: 2rem;
+    }
+    & > * {
+      color: black;
+      transition: all 0.2s;
+
+      @media only screen and (max-width: 830px) {
+        display: none;
+        text-align: left;
+        position: relative;
+        z-index: 99999;
+      }
+      &:hover {
+        color: $color-primary;
+      }
+      &:not(:last-child) {
+        margin-right: 3rem;
+        @media only screen and (max-width: 830px) {
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}
+
+/* That's a tricky one.  It's a lot of repeated code, but I didn't want to use the Intersection Observer API in order to make the burger appear even on scroll.
+So I did some researches and I found a really cool trick. To know more see the nav_logic.js file in the js folder*/
+
+html:not([data-scroll="0"]) {
+  .navigation {
+    &__responsive {
+      position: relative;
+
+      .navigation__links {
+        background-color: $light-gray;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        border-radius: 0.3rem;
+        width: 20rem;
+        margin-top: 3rem;
+        margin-right: 10rem;
+        height: 20rem;
+        justify-content: space-between;
+        align-items: center;
+
+        & > * {
+          margin: 1rem;
+          display: block;
+        }
+      }
+    }
+
+    &__wrapper {
+      flex-direction: column-reverse;
+      width: 3rem;
+    }
+    &__icon {
+      justify-self: flex-end;
+      display: block;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    &__links {
+      flex-direction: column;
+      margin-top: 2rem;
+      position: fixed;
+
+      & > * {
+        display: none;
+        text-align: left;
+        position: relative;
+        z-index: 99999;
+
+        &:not(:last-child) {
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}

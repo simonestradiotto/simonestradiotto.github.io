@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My website</title>
+    <!-- Start of the google font's sheets-->
+    <link rel="icon" href="img/letter_s.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of the google font's sheets-->
+
+    <!-- Stylesheet for Animate.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Stylesheet for Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- My stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container grid_container">
+      <nav class="navigation nav_container">
+        <p class="navigation__name">Simone Stradiotto</p>
+        <div class="navigation__wrapper">
+          <div class="navigation__links">
+            <a
+              href="#bio_title"
+              class="navigation__link navigation__links--biography"
+              >About me</a
+            >
+            <a
+              href="#asp_title"
+              class="navigation__link navigation__links--aspirations"
+              >My aspirations</a
+            >
+            <a
+              href="#hobbies_title"
+              class="navigation__link navigation__links--hobbies"
+              >My hobbies</a
+            >
+            <a
+              href="#contacts"
+              class="navigation__link navigation__links--contacts"
+              >Contact me</a
+            >
+          </div>
+          <a
+            href="javascript:void(0);"
+            class="navigation__icon"
+            onclick="makeResponsive()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+
+      <header class="introduction grid_header">
+        <div class="introduction__wrapper introduction__wrapper--1">
+          <h1 class="introduction__title animate__animated animate__fadeInLeft">
+            Greetings, <br />travelers from the Internet!
+          </h1>
+          <p
+            class="
+              introduction__description
+              animate__animated animate__fadeInLeft
+            "
+          >
+            Welcome to my personal website. Here you can learn something about
+            me, what I do and what I like.
+          </p>
+          <a
+            href="#bio_title"
+            class="introduction__link animate__animated animate__fadeInUp"
+            >Read more &darr;</a
+          >
+        </div>
+        <div class="introduction__wrapper introduction__wrapper--2">
+          <div
+            class="introduction__img_wrapper animate__animated animate__fadeIn"
+          >
+            <img
+              src="img/profile_picture.png"
+              alt="immagine"
+              class="
+                introduction__profile_picture
+                animate__animated animate__fadeIn
+              "
+            />
+          </div>
+        </div>
+      </header>
+
+      <main class="content grid_container grid_main">
+        <article class="content__article content__biography">
+          <h2 class="content__title content__title--biography" id="bio_title">
+            About me
+          </h2>
+          <section class="biography__container">
+            <div class="biography__div">
+              <ion-icon
+                name="person-outline"
+                class="biography__icon biography__icon--1"
+              ></ion-icon>
+
+              <p class="content__paragraph">
+                Nice to meet you! My name is Simone Stradiotto, born July/15
+                /1999 in Italy, where I currently live. The first three
+                adjectives that come to my mind in order to describe myself are
+                curious, stubborn and constant. That said, however, the best
+                thing to say in order describe me is that I love to read and
+                learn.
+              </p>
+            </div>
+
+            <div class="biography__div biography__div--2">
+              <ion-icon
+                name="rocket-outline"
+                class="biography__icon biography__icon--2"
+              ></ion-icon>
+              <p class="content__paragraph">
+                I spent countless hours just reading about all kind of things:
+                history, nature, space, technology and science. Usually it's
+                just my curiosity to drive me, but of course there have been
+                times where I needed some specific information for me or for my
+                family. In that occasions I understand that my curiosity, in the
+                course of many years, passively helped me to
+                <span class="biography__span"> learn how to learn. </span>
+                All of this thanks to the fact that we live in the greatest time
+                in the entire history to learn new things.
+              </p>
+            </div>
+
+            <div class="biography__div">
+              <ion-icon
+                name="ribbon-outline"
+                class="biography__icon biography__icon--3"
+              ></ion-icon>
+              <p class="content__paragraph">
+                During my adventures on the Internet, I came across a famous
+                quote from the author and public speaker Donald Miller:
+                <span class="biography__span">
+                  &ldquo;In the age of information, ignorance is a
+                  choice.&rdquo;
+                </span>
+                I deeply agree with this statement.
+              </p>
+            </div>
+
+            <div class="biography__div biography__div--2">
+              <ion-icon
+                name="book-outline"
+                class="biography__icon biography__icon--4"
+              ></ion-icon>
+              <p class="content__paragraph">
+                With the web, we are capable to access the
+                <span class="biography__span">
+                  greatest library of all times</span
+                >, a literally infinite amount of information, way more than any
+                human could learn in a lifetime. Well, I'm not going to waste
+                this possibility.
+              </p>
+            </div>
+          </section>
+        </article>
+
+        <article class="content__article content__aspirations">
+          <h2 class="content__title content__title--aspirations" id="asp_title">
+            My aspirations
+          </h2>
+          <section class="aspiration__container">
+            <div class="aspiration aspiration__one">
+              <ion-icon name="leaf-outline" class="aspiration__icon"></ion-icon>
+              <h3 class="aspiration__name">Nature</h3>
+              <p class="content__paragraph">
+                I believe that now it can no longer be denied: as humans, we
+                have greatly damaged our biosphere. Unfortunately, until
+                recently, many people did not see climate changes as a serious
+                and immediate problem. That being said, it gives me hope to see
+                how in recent years, many companies have undergone a process of
+                awareness, trying to reduce their environmental impact. Much of
+                this has been possible thanks to the digital revolution.
+              </p>
+            </div>
+            <div class="aspiration aspiration__two">
+              <ion-icon
+                name="desktop-outline"
+                class="aspiration__icon"
+              ></ion-icon>
+              <h3 class="aspiration__name">Technology</h3>
+              <p class="content__paragraph">
+                I've always been fascinated by the infinite potential of
+                technology; having no biological restrictions to respect, in the
+                world of technology the only limit is people's imagination.
+                Thanks to it, our species in the last hundred years has been
+                able to make unthinkable cultural advances, and there are no
+                hints of an arrest.
+              </p>
+            </div>
+            <div class="aspiration aspiration__three">
+              <ion-icon name="fish-outline" class="aspiration__icon"></ion-icon>
+              <h3 class="aspiration__name">Biodiversity</h3>
+              <p class="content__paragraph">
+                I grew up and live in a country house. I remember when I was a
+                child, I liked to go out in our garden on summer evenings and
+                observe the fireflies. For several years now the fireflies are
+                no more. It's a very personal example, but it was when I noticed
+                this little thing that I realized how easy it is to pass over or
+                even not notice some ecosystem losses. In this area too, digital
+                can help raise public awareness of this kind of facts.
+              </p>
+            </div>
+            <div class="aspiration aspiration__four">
+              <ion-icon name="bulb-outline" class="aspiration__icon"></ion-icon>
+              <h3 class="aspiration__name">Innovation</h3>
+              <p class="content__paragraph">
+                I admire inventors very much. And more than that, I admire the
+                inherent ability in every human being to shape an idea and solve
+                problems. I have enjoyed puzzles and riddles ever since I was a
+                child, and I still enjoy solving the various problems that arise
+                in software development. Obviously it's an area where you never
+                finish learning, but that's just fine for me.
+              </p>
+            </div>
+          </section>
+        </article>
+
+        <article class="content__article content__hobbies">
+          <h2 class="content__title content__title--hobbies" id="hobbies_title">
+            My hobbies
+          </h2>
+          <section class="hobby__container">
+            <div class="hobby__card hobby__card--1">
+              <div class="hobby__card_side hobby__card_side--front">
+                <div class="hobby__card_head hobby__card_head--1">
+                  <h3 class="hobby__card_title">Books</h3>
+                  <h5 class="hobby__card_subtitle">
+                    To live one hundred lives in a single lifetime.
+                  </h5>
+                </div>
+                <div class="hobby__card_body">
+                  <p class="hobby__card_text">
+                    I absolutely love to read, and I am very proud of the
+                    library that, over the years, I have created. I have books
+                    of different kinds, even if I prefer fantasy fiction since
+                    it is the one that allows me to immerse myself more in the
+                    book I read.
+                  </p>
+                  <span class="hobby__card_body--suggestion"
+                    >A suggestion by me &rarr;</span
+                  >
+                </div>
+              </div>
+              <div class="hobby__card_side hobby__card_side--back">
+                <h3 class="hobby__card_title hobby__card_title--back">
+                  The Poppy War
+                </h3>
+                <h5 class="hobby__card_subtitle hobby__card_subtitle--back">
+                  Written by R. F. Kuang
+                </h5>
+                <p class="hobby__card_text">
+                  &ldquo;The Poppy War&rdquo; is an historical fantasy published
+                  in 2018. It's a fantasy repurposing of the second
+                  sino-japanese war (1937–1945), and it also deals with various
+                  aspects of Mongolian and Chinese shamanism. I must warn you,
+                  however, that it is a book that deals with war in a very raw
+                  way, and I do not recommend it if you are easily
+                  impressionable.
+                </p>
+              </div>
+            </div>
+
+            <div class="hobby__card hobby__card--2">
+              <div class="hobby__card_side hobby__card_side--front">
+                <div class="hobby__card_head hobby__card_head--2">
+                  <h3 class="hobby__card_title">Soundtracks</h3>
+                  <h5 class="hobby__card_subtitle">
+                    To close my eyes and let the music carry me.
+                  </h5>
+                </div>
+                <div class="hobby__card_body">
+                  <p class="hobby__card_text">
+                    Soundtracks are by far my favorite kind of music. I started
+                    listening to classical music several years ago; this made me
+                    passionate about orchestral music in general, and no other
+                    type of music manages to give me similar feelings.
+                  </p>
+                  <span class="hobby__card_body--suggestion"
+                    >A suggestion by me &rarr;</span
+                  >
+                </div>
+              </div>
+              <div class="hobby__card_side hobby__card_side--back">
+                <h3 class="hobby__card_title hobby__card_title--back">
+                  Star Sky
+                </h3>
+                <h5 class="hobby__card_subtitle hobby__card_subtitle--back">
+                  Composed by Two Steps From Hell
+                </h5>
+                <p class="hobby__card_text">
+                  &ldquo;Star Sky&rdquo; is a song from the album
+                  &ldquo;Battlecry&rdquo;. Honestly, all of Two Steps From
+                  Hell's songs are great, and you can't go wrong with them. Star
+                  Sky however, at least for me, has a little something extra. I
+                  can't really define what, I just know that every time I listen
+                  to it I feel like I'm being carried away by the music. I hope
+                  I don't sound too weird.
+                </p>
+              </div>
+            </div>
+
+            <div class="hobby__break"></div>
+
+            <div class="hobby__card hobby__card--3">
+              <div class="hobby__card_side hobby__card_side--front">
+                <div class="hobby__card_head hobby__card_head--3">
+                  <h3 class="hobby__card_title">Films</h3>
+                  <h5 class="hobby__card_subtitle">
+                    To see an idea came to be.
+                  </h5>
+                </div>
+                <div class="hobby__card_body">
+                  <p class="hobby__card_text">
+                    Thanks to my dad, I started watching many of the great
+                    classics of cinema very early. From &ldquo;Star Wars&rdquo;
+                    to &ldquo;The Godfather&rdquo;, I've seen films of all kinds
+                    and I've always found very fascinated how much our culture
+                    has been and still is influenced by movies, even in everyday
+                    life.
+                  </p>
+                  <span class="hobby__card_body--suggestion"
+                    >A suggestion by me &rarr;</span
+                  >
+                </div>
+              </div>
+              <div class="hobby__card_side hobby__card_side--back">
+                <h3 class="hobby__card_title hobby__card_title--back">
+                  Jurassic Park
+                </h3>
+                <h5 class="hobby__card_subtitle hobby__card_subtitle--back">
+                  Directed by Steven Spielberg
+                </h5>
+                <p class="hobby__card_text">
+                  As a dinosaur's lover, I couldn't fail to mention
+                  &ldquo;Jurassic Park&rdquo; from 1993. Even if the dinosaurs
+                  are not biologically correct I can't help but adore this
+                  movie. It also has an incredible amount of memorable scenes:
+                  the velociraptors chasing the kids in the kitchen, the quote
+                  &ldquo;Spared no expense!&rdquo; from John Hammond and the
+                  super-famous &ldquo;Life finds a way&rdquo; from doctor Ian
+                  Malcolm.
+                </p>
+              </div>
+            </div>
+
+            <div class="hobby__card hobby__card--4">
+              <div class="hobby__card_side hobby__card_side--front">
+                <div class="hobby__card_head hobby__card_head--4">
+                  <h3 class="hobby__card_title">Videogames</h3>
+                  <h5 class="hobby__card_subtitle">
+                    To experience the ultimate involvement.
+                  </h5>
+                </div>
+                <div class="hobby__card_body">
+                  <p class="hobby__card_text">
+                    Videogames have always been an important part of my life. I
+                    know that they are a hobby that is very often demonized and
+                    passed off as a waste of time, but I consider them a form of
+                    art. I do not pretend to change anyone's opinion, I only ask
+                    to be open to new forms of expression.
+                  </p>
+                  <span class="hobby__card_body--suggestion"
+                    >A suggestion by me &rarr;</span
+                  >
+                </div>
+              </div>
+              <div class="hobby__card_side hobby__card_side--back">
+                <h3 class="hobby__card_title hobby__card_title--back">
+                  The Legend of Zelda
+                </h3>
+                <h5 class="hobby__card_subtitle hobby__card_subtitle--back">
+                  Developed by Nintendo
+                </h5>
+                <p class="hobby__card_text">
+                  With &ldquo;The Legend of Zelda&rdquo;'s series I was unable
+                  to choose a single game. They are a series of fantastic puzzle
+                  and action games that have made the history of the medium. The
+                  developers have also shown a lot of courage and imagination
+                  over and over again, as each chapter of the saga is absolutely
+                  unique.
+                </p>
+              </div>
+            </div>
+          </section>
+        </article>
+      </main>
+
+      <footer class="contacts grid_footer" id="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__mail">
+            <a
+              href="mailto:simone.stradiotto@libero.it"
+              class="contacts__link contacts__mail--link"
+              target="_blank"
+              >simone.stradiotto@libero.it</a
+            >
+          </div>
+          <div class="contacts__copyright">&#169; 2020 Simone Stradiotto</div>
+          <div class="contacts__socials">
+            <a
+              href="https://www.instagram.com/simone_stradiotto/"
+              class="contacts__link contacts__socials_icon"
+              target="_blank"
+              ><ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a
+              href="https://www.facebook.com/simone.stradiotto.9"
+              class="contacts__link contacts__socials_icon"
+              target="_blank"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--Ionicon's sheets -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- My scripts-->
+    <script src="js/prevent_autoscroll.js"></script>
+    <script src="js/nav_logic.js"></script>
+  </body>
+</html>

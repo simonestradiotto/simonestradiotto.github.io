@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $gray;
+  position: absolute;
+  z-index: -1;
+}
+.container {
+  margin: 0 auto;
+}
+
+::selection {
+  background-color: $color-primary-dark;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}

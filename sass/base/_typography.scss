@@ -1,0 +1,14 @@
+html {
+  /* I manually set the font size in order to use rems in the rest of the project*/
+  font-size: 10px;
+  @media only screen and (max-width: 1350px) {
+    font-size: 9px;
+  }
+  @media only screen and (max-width: 680px) {
+    font-size: 8px;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
