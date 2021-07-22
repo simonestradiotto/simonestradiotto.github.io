@@ -29,7 +29,6 @@
     display: grid;
     grid-template-rows: repeat(4, auto);
     grid-template-columns: 1fr 1fr;
-    row-gap: 1rem;
 
     .content {
       &__biography {
