@@ -25,6 +25,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- Stylesheet for Flickity-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
 
     <!-- My stylesheet-->
     <link rel="stylesheet" href="css/style.css" />
@@ -44,6 +49,11 @@
               href="#asp_title"
               class="navigation__link navigation__links--aspirations"
               >My aspirations</a
+            >
+            <a
+              href="#skills_title"
+              class="navigation__link navigation__links--skills"
+              >My skills</a
             >
             <a
               href="#hobbies_title"
@@ -232,6 +242,165 @@
                 in software development. Obviously it's an area where you never
                 finish learning, but that's just fine for me.
               </p>
+            </div>
+          </section>
+        </article>
+
+        <article class="content__article content__skills">
+          <h2 class="content__title content__title--skills" id="skills_title">
+            My skills
+          </h2>
+          <section class="skills__container">
+            <div class="skills__items">
+              <h3 class="skills__title skills__title--hard">Hard Skills</h3>
+              <div
+                class="main-carousel skills__carousel"
+                data-flickity='{ "cellAlign": "left", "contain": true, "setGallerySize": false, "wrapAround": true }'
+              >
+                <div class="carousel-cell skills__cell skills__cell--html">
+                  <img
+                    src="img/html_logo.png"
+                    alt="html logo"
+                    class="skills__logo"
+                  />
+                  <p class="content__paragraph skills__paragraph">
+                    Each time I write an HTML file, I try to make it as semantic
+                    as possible. I keep attenction on the indentantion and I try
+                    do make the file as readable as possible. When I get the
+                    occasions, I enjoy experimetn with the really new tags. Of
+                    course, if I know that the targets for that site are people
+                    who could have older pc and browser, I try to give them too
+                    a good experience with the site.
+                  </p>
+                </div>
+                <div class="carousel-cell skills__cell skills__cell--css">
+                  <img
+                    src="img/css_logo.svg"
+                    alt="css logo"
+                    class="skills__logo"
+                  />
+                  <p class="content__paragraph skills__paragraph">
+                    I absolutely LOVE CSS. Sometimes I like to go see some CSS
+                    codepen, and I'm always amazed at what can be achieved with
+                    only that technology. So, in my sites, I always try to make
+                    something cool exploiting the potential of the modern CSS. I
+                    also like to use the BEM metodology for classes, which
+                    really helps with the DRY mentality.
+                  </p>
+                </div>
+                <div class="carousel-cell skills__cell skills__cell--sass">
+                  <img
+                    src="img/sass_logo.png"
+                    alt="sass logo"
+                    class="skills__logo"
+                  />
+                  <p class="content__paragraph skills__paragraph">
+                    If the app I'm working on is big enough, I really like to
+                    use SASS, expetially with SCSS syntax. It helps not only to
+                    speed up the process, but also to keep the code really
+                    organized. I'm particulary a fan of the 7-in-1 architecture.
+                  </p>
+                </div>
+                <div class="carousel-cell skills__cell skills__cell--js">
+                  <img
+                    src="img/js_logo.png"
+                    alt="javascript logo"
+                    class="skills__logo"
+                  />
+                  <p class="content__paragraph skills__paragraph">
+                    I'm also pretty confident using JavaScript. Everything that
+                    cannot be achived with CSS, can probably be achived with JS,
+                    and I believe that this can really make or break a web app.
+                    Even if I can understand well the old code, I'm more at ease
+                    with post ES2015 syntax.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="skills__items">
+              <h3 class="skills__title skills__title--soft">Soft Skills</h3>
+              <div
+                class="main-carousel skills__carousel"
+                data-flickity='{ "cellAlign": "left", "contain": true, "setGallerySize": false, "wrapAround": true }'
+              >
+                <div class="carousel-cell skills__cell">
+                  <ion-icon name="cog-outline" class="skills__icon"></ion-icon>
+                  <h4 class="skills__name">Problem Solving</h4>
+                  <p class="content__paragraph skills__paragraph">
+                    Thanks to videogames, I started to think on how to solve
+                    problems in an efficent way really early in my life. It was
+                    (and still is) really fun for me trying to optimize
+                    something as much as possible.
+                  </p>
+                </div>
+                <div class="carousel-cell skills__cell">
+                  <ion-icon name="golf-outline" class="skills__icon"></ion-icon>
+                  <h4 class="skills__name">Autonomy</h4>
+                  <p class="content__paragraph skills__paragraph">
+                    During the past few years, I lerned a lot of things by
+                    myself thank to documentations and tutorial. Of course there
+                    has been times where a certain argument wasn't really clear
+                    to me, but I was not discouraged. Instead, i had to relay
+                    only on myself to find a way out of that situation. With
+                    that beign said, of course I also value a lot teamwork and
+                    I'm not afraid to ask for help.
+                  </p>
+                </div>
+                <div class="carousel-cell skills__cell">
+                  <ion-icon
+                    name="pulse-outline"
+                    class="skills__icon"
+                  ></ion-icon>
+                  <h4 class="skills__name">Control</h4>
+                  <p class="content__paragraph skills__paragraph">
+                    In life I consider myself a quite moderate person. I have a
+                    very mild character and is very rare for me to get angry at
+                    something or someone. I do believe that videogames also
+                    helped in this scope: a lot of times, if you lose your chill
+                    it's game over.
+                  </p>
+                </div>
+                <div class="carousel-cell skills__cell">
+                  <ion-icon
+                    name="today-outline"
+                    class="skills__icon"
+                  ></ion-icon>
+                  <h4 class="skills__name">Planning</h4>
+                  <p class="content__paragraph skills__paragraph">
+                    I don't like unforseens, but since they are inevitable in
+                    life I decided to plan everything else. I even try to
+                    schedule my dayly routine in order to be able to deal with
+                    as much unexpected events as possible. This could sound a
+                    little creepy, but I assure you that I am (almost) perfectly
+                    normal.
+                  </p>
+                </div>
+                <div class="carousel-cell skills__cell">
+                  <ion-icon
+                    name="trending-up-outline"
+                    class="skills__icon"
+                  ></ion-icon>
+                  <h4 class="skills__name">Self-improvement</h4>
+                  <p class="content__paragraph skills__paragraph">
+                    I'm a relly self-criticist person. Sometimes even too much,
+                    I acknowledge that, but for this reason I'm always trying to
+                    improve myself and to do what I do as best as I can. And if
+                    my best isn't enough, then I treasure all the criticisms and
+                    I try to improve myself even more.
+                  </p>
+                </div>
+                <div class="carousel-cell skills__cell">
+                  <ion-icon name="mic-outline" class="skills__icon"></ion-icon>
+                  <h4 class="skills__name">Communication</h4>
+                  <p class="content__paragraph skills__paragraph">
+                    I am a person of an empathic nature, and I think I can
+                    relate to other people quite well. Even in high school, my
+                    classmates asked me for clarificaion quite often, and I used
+                    that opportunity to enhance my communication as much as I
+                    can. Again, if I can improve then I take every opportunity.
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
         </article>
@@ -443,6 +612,9 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <!--Flickity's script-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <!-- My scripts-->
     <script src="js/prevent_autoscroll.js"></script>
