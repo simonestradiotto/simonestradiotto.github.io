@@ -4,7 +4,7 @@ let backs = document.querySelectorAll(".hobby__card_side--back");
 let fronts = document.querySelectorAll(".hobby__card_side--front");
 
 for (const back of backs) {
-  back.addEventListener("click", (e) => {
+  back.addEventListener("touchstart", (e) => {
     e.target.closest(".hobby__card_side--back").style.transform =
       "rotateY(180deg)";
     e.target.closest(
@@ -14,7 +14,7 @@ for (const back of backs) {
 }
 
 for (const front of fronts) {
-  front.addEventListener("click", (e) => {
+  front.addEventListener("touchstart", (e) => {
     e.target.closest(".hobby__card_side--front").style.transform =
       "rotateY(-180deg)";
     e.target.closest(
