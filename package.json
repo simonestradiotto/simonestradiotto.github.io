@@ -1,6 +1,6 @@
 {
   "name": "sito-personale",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Personal web page",
   "main": "index.js",
   "browserslist": "last 10 versions",

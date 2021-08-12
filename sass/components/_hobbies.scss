@@ -105,6 +105,9 @@
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
       }
+      @media only screen and (max-width: 600px) {
+        font-size: 1.8rem;
+      }
     }
 
     &_head {
@@ -188,11 +191,48 @@
       }
 
       &--back {
-        background-image: -webkit-linear-gradient(
-          $color-primary-light,
-          $color-primary-dark
-        );
+        &_1 {
+          background-image: linear-gradient(
+              rgba(255, 165, 0, 0.8),
+              rgba(255, 69, 0, 0.8)
+            ),
+            url(../img/poppy_war.jpg);
 
+          background-position: center 60%;
+        }
+
+        &_2 {
+          background-image: linear-gradient(
+              rgba(255, 165, 0, 0.8),
+              rgba(255, 69, 0, 0.8)
+            ),
+            url(../img/star_sky.jpg);
+
+          background-position: center;
+        }
+
+        &_3 {
+          background-image: linear-gradient(
+              rgba(255, 165, 0, 0.8),
+              rgba(255, 69, 0, 0.8)
+            ),
+            url(../img/jurassic_park.jpg);
+
+          background-position: center;
+        }
+
+        &_4 {
+          background-image: linear-gradient(
+              rgba(255, 165, 0, 0.8),
+              rgba(255, 69, 0, 0.8)
+            ),
+            url(../img/legend_of_zelda.jpg);
+
+          background-position: center;
+        }
+
+        background-size: cover;
+        background-repeat: no-repeat;
         color: $light-gray;
 
         transform: rotateY(180deg);
