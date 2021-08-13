@@ -63,27 +63,6 @@
     padding-bottom: 8rem;
     background-color: $light-gray;
     box-shadow: 0 0 5rem 1.5rem rgba(0, 0, 0, 0.1);
-    /* The clip path has a weird behavior when the page shrinks, so I had to control it with a lot of media queries*/
-    // clip-path: polygon(0 6%, 100% 0%, 100% 94%, 0% 100%);
-
-    // @media only screen and (max-width: 1330px) {
-    //   clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
-    // }
-    // @media only screen and (max-width: 1200px) {
-    //   clip-path: polygon(0 6%, 100% 0%, 100% 94%, 0% 100%);
-    // }
-
-    // @media only screen and (max-width: 850px) {
-    //   clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
-    // }
-    // @media only screen and (max-width: 500px) {
-    //   clip-path: polygon(0 1%, 100% 0%, 100% 99%, 0% 100%);
-    //   padding-top: 8rem;
-    //   padding-bottom: 5rem;
-    // }
-    // @media only screen and (max-width: 350px) {
-    //   clip-path: polygon(0 1%, 100% 0%, 100% 99%, 0% 100%);
-    // }
   }
 
   &__skills {
@@ -101,27 +80,13 @@
     padding-top: 8rem;
     padding-bottom: 8rem;
     background-color: $light-gray;
-    background-image: url(../img/scattered-forcefields.svg);
-    /* background by SVGBackgrounds.com. Big shoutout! */
     box-shadow: 0 0 5rem 1.5rem rgba(0, 0, 0, 0.1);
+
+    /* background by SVGBackgrounds.com. Big shoutout! */
+    background-image: url(../img/scattered-forcefields.svg);
 
     @media only screen and (max-width: 420px) {
       margin-top: 10rem;
     }
-
-    // clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0% 100%);
-
-    // @media only screen and (max-width: 1330px) {
-    //   clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
-    // }
-
-    // @media only screen and (max-width: 500px) {
-    //   clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0% 100%);
-    //   padding-top: 8rem;
-    //   padding-bottom: 5rem;
-    // }
-    // @media only screen and (max-width: 350px) {
-    //   clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0% 100%);
-    // }
   }
 }
